@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,32 +7,34 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:background="@drawable/putihsedang"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
         android:orientation="vertical"
         android:weightSum="4"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/txtGrid"
+            android:id="@+id/menu_pasar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="Grid layout"
+            android:text="Pasar"
             android:textAlignment="center"
             android:textColor="@android:color/black"
-            android:textSize="34sp"
+            android:textSize="24sp"
             android:textStyle="bold" />
 
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="4"
+            android:layout_weight="1"
             android:alignmentMode="alignMargins"
-            android:columnCount="2"
+            android:columnCount="5"
             android:columnOrderPreserved="false"
-            android:padding="14dp"
-            android:rowCount="4">
+            android:padding="24dp"
+            android:rowCount="2">
 
             <!-- Row 1 -->
             <!-- Kolom 1 -->
@@ -41,9 +43,9 @@
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp">
 
@@ -55,18 +57,18 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/ai" />
+                        android:src="@drawable/bawang_merah" />
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Illustrator"
+                        android:text="Bawang Merah"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
-                        android:textSize="16sp"
+                        android:textSize="8sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -77,9 +79,9 @@
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp">
 
@@ -91,18 +93,126 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/an" />
+                        android:src="@drawable/bawang_putih" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="16dp"
-                        android:text="Animate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bawang Putih"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
-                        android:textSize="16sp"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- Kolom 3 -->
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/cabe_rawit" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cabe Rawit"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- Kolom 4 -->
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/lombok_besar" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lombok Besar"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- Kolom 5 -->
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/lombok_keriting" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lombok Keriting"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="8sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -115,9 +225,9 @@
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp">
 
@@ -129,18 +239,18 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/au" />
+                        android:src="@drawable/tomat" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="16dp"
-                        android:text="Audition"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tomat"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
-                        android:textSize="16sp"
+                        android:textSize="8sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -151,9 +261,9 @@
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp">
 
@@ -165,33 +275,31 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/dw" />
+                        android:src="@drawable/daging_ayam" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="16dp"
-                        android:text="Dreamveawer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Daging Ayam"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
-                        android:textSize="16sp"
+                        android:textSize="8sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
             </android.support.v7.widget.CardView>
-
-            <!-- Row 3 -->
-            <!-- Kolom 1 -->
+            <!-- Kolom 3 -->
             <android.support.v7.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp">
 
@@ -203,31 +311,31 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/au" />
+                        android:src="@drawable/daging_ikan" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="16dp"
-                        android:text="Audition"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ikan"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
-                        android:textSize="16sp"
+                        android:textSize="8sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
             </android.support.v7.widget.CardView>
-            <!-- Kolom 2 -->
+            <!-- Kolom 4 -->
             <android.support.v7.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp">
 
@@ -239,33 +347,31 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/dw" />
+                        android:src="@drawable/kepiting" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="16dp"
-                        android:text="Dreamveawer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Kepiting"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
-                        android:textSize="16sp"
+                        android:textSize="8sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
             </android.support.v7.widget.CardView>
-
-            <!-- Row 4 -->
-            <!-- Kolom 1 -->
+            <!-- Kolom 5 -->
             <android.support.v7.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp">
 
@@ -277,54 +383,18 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/au" />
+                        android:src="@drawable/udang" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="16dp"
-                        android:text="Audition"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Udang"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
-            <!-- Kolom 2 -->
-            <android.support.v7.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginBottom="16dp"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="8dp">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="0dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@drawable/dw" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="16dp"
-                        android:text="Dreamveawer"
-                        android:textAlignment="center"
-                        android:textColor="@android:color/black"
-                        android:textSize="16sp"
+                        android:textSize="8sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -334,4 +404,223 @@
 
     </LinearLayout>
 
-</ScrollView>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginTop="150dp"
+    android:layout_marginBottom="231dp"
+    android:orientation="vertical"
+    android:weightSum="4"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:id="@+id/menu_Wanita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Wanita"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:alignmentMode="alignMargins"
+        android:columnCount="5"
+        android:columnOrderPreserved="false"
+        android:padding="24dp"
+        android:rowCount="1">
+
+        <!-- Row 1 -->
+        <!-- Kolom 1 -->
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="0dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/memasak" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Memasak"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <!-- Kolom 2 -->
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="0dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/menjahit" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Menjahit"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <!-- Kolom 3 -->
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="0dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/makeup" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Merias"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <!-- Kolom 4 -->
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="0dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/berkebun" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Berkebun"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <!-- Kolom 5 -->
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="0dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/pet_toys" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pets"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </GridLayout>
+
+</LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
